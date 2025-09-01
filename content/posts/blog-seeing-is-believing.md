@@ -3,7 +3,7 @@ title: "The Overlooked Value of Demonstrations"
 slug: "seeing-is-believing"
 excerpt: "Reflections on how physical demonstrations can bridge the gap between technical solutions and public understanding in engineering."
 category: "Reflections"
-publishedDate: "2025-05-10"
+date: 2025-06-12T00:00:00-00:00
 featured: false
 ---
 
