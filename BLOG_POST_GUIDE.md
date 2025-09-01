@@ -29,8 +29,11 @@ Visit `http://localhost:1313`
 ### 4. Publish
 ```bash
 git add content/posts/your-title.md
-git commit -m "Add post: Your Title"
+git commit -m "Add post"
 git push
 ```
 
 Done! Post will be live at `https://khalidlabs.github.io` in 2-5 minutes.
+
+
+git add . && git commit -m "Update" && git push
