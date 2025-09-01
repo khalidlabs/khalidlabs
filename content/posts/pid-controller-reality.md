@@ -19,7 +19,7 @@ Discussions about "autonomous agents" or "Artificial General Intelligence" (AGI)
 
 A PID loop is a decision-making policy in its purest form. Though its core logic is simple, making this well-studied agent work reliably in the real world requires an **enormous amount of engineering**. This effort exposes the vast and unforgiving gap between abstract algorithms and physical operation. Analyzing this simple controller provides a crucial reality check, clarifying the fundamental requirements that any credible autonomous system—no matter how complex—must fulfill.
 
----
+
 
 **The PID Controller's Deceptively Simple Logic**
 
@@ -27,7 +27,7 @@ At its heart, a PID controller implements a straightforward decision policy. It 
 
 This logic represents a powerful concept, but on its own, it is little more than an idea. Its successful implementation depends on a host of decisions that are not contained within this simple logic but are essential for stable, safe, and effective operation.
 
----
+
 
 **Why Real-World Implementation is an Engineering Challenge**
 
@@ -43,7 +43,7 @@ The gap between the simple algorithm and a working controller is where the real 
 
 *   **Loop Interactions and System-Level Behavior:** Controllers rarely operate in isolation. In any real plant, the action of one controller creates a disturbance for another. For example, a controller that adjusts steam flow to a reactor directly impacts the steam header pressure, which another controller must manage. These **loop interactions** mean that the system cannot be treated as a collection of independent problems. Stable operation is an emergent property of the entire system, not just of individual algorithms.
 
----
+
 
 **Lessons for a Credible Autonomous Agent**
 
@@ -61,7 +61,6 @@ Most activities that sustain our civilization involve this physical loop. In the
 
 *   **Socio-Technical Operability:** A control system is only effective if humans can work with it. Its modes of operation must be understandable, its actions auditable, and its control easily transferable to a human operator. The principles of bumpless transfer are not just technical details; they are the foundation of a safe and operable human-machine interface.
 
----
 
 **Conclusion**
 
