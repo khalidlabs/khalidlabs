@@ -1,6 +1,6 @@
 ---
 title: "Beyond the Intelligence Debate: What LLMs Can Do Today"
-date: 2025-01-12T00:00:00-00:00
+date: 2025-06-12T00:00:00-00:00
 draft: false
 description: "Shifting focus from whether LLMs 'think' to evaluating their practical utility in engineering and daily work."
 tags: ["Reflections", "AI", "Engineering"]

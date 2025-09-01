@@ -1,6 +1,6 @@
 ---
 title: "The Overlooked Value of Demonstrations"
-date: 2025-01-12T00:00:00-00:00
+date: 2025-06-12T00:00:00-00:00
 draft: false
 description: "Reflections on how physical demonstrations can bridge the gap between technical solutions and public understanding in engineering."
 tags: ["Reflections", "Engineering", "Communication"]
