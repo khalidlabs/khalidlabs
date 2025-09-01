@@ -5,8 +5,7 @@ draft: false
 description: "Shifting focus from whether LLMs 'think' to evaluating their practical utility in engineering and daily work."
 tags: ["Reflections", "AI", "Engineering"]
 categories: ["Reflections"]
-author: "KhalidLabs"
-featured: false
+---
 ---
 
 Apple's recent research article, The Illusion of Thinking, made waves. But the reaction quickly moved beyond the technical. For some, it confirmed LLM limitations; for others, it was inconsequential and human-level intelligence is inevitable. And so the cycle continues: one side dismisses, the other inflates.
