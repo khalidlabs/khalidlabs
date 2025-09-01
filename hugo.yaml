@@ -5,9 +5,31 @@ theme: ["PaperMod"]
 # Force rebuild - updated post front matter
 
 params:
-  homeInfoParams:
-    Title: "Khalid Alhazmi"
-    Content: |
-      Welcome to my blog! I write about technology, engineering, and more.
-      
-      Check out my latest posts below.
+  profileMode:
+    enabled: true
+    title: "Khalid Alhazmi"
+    subtitle: "Technology & Engineering"
+    imageUrl: "path/to/your/profile-image.jpg"  # Optional
+    imageTitle: "Khalid Alhazmi"
+    buttons:
+      - name: "Posts"
+        url: "posts/"
+      - name: "About"
+        url: "about/"
+      - name: "GitHub"
+        url: "https://github.com/yourusername"
+      - name: "LinkedIn"
+        url: "https://linkedin.com/in/yourusername"
+      - name: "Email"
+        url: "mailto:your.email@example.com"
+  
+  # Social icons will also appear
+  socialIcons:
+    - name: github
+      url: "https://github.com/yourusername"
+    - name: linkedin
+      url: "https://linkedin.com/in/yourusername"
+    - name: twitter
+      url: "https://twitter.com/yourusername"
+    - name: email
+      url: "mailto:your.email@example.com"
