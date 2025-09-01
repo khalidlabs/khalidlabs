@@ -3,3 +3,11 @@ languageCode: en-us
 title: KhalidLabs
 theme: ["PaperMod"]
 # Force rebuild - updated post front matter
+
+params:
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: |
+      Welcome to my blog! I write about technology, engineering, and more.
+      
+      Check out my latest posts below.
