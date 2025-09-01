@@ -4,7 +4,7 @@ slug: "seeing-is-believing"
 excerpt: "Reflections on how physical demonstrations can bridge the gap between technical solutions and public understanding in engineering."
 category: "Reflections"
 publishedDate: "2025-05-10"
-featured: true
+featured: false
 ---
 
 While working on algorithms, I often thought about how to demonstrate their utility. A bench-scale setup is unlikely to capture many aspects of the complexity of industrial systems. It is too idealized and overlooks important interactions among units. Mathematical models, by contrast, can simulate much more. They can incorporate nonlinear behavior, multivariable dynamics, feedback, and uncertainty. In theory, a well-constructed simulation that captures these complexities should be more informative than an idealized lab setup.
