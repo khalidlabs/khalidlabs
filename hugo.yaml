@@ -23,5 +23,5 @@ params:
       url: "https://linkedin.com/in/khalidalhazmi/"
     - name: email
       url: "mailto:khalid.alhazmi@example.com"
-    - name: graduation-cap  
+    - name: google-scholar  
       url: "https://scholar.google.com/citations?user=TxoFaOIAAAAJ"
