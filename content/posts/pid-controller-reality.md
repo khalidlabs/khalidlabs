@@ -1,6 +1,6 @@
 ---
 title: "The PID Controller Reality Check for AGI"
-date: 2025-09-02T00:00:00-00:00
+date: 2025-09-02T00:00:00Z
 draft: false
 description: "Amidst the grand promises of Artificial General Intelligence, it is easy to overlook the agents that already run our world. They are not vast, inscrutable neural networks, but humble, time-tested workhorses."
 tags: ["Reflections", "AI", "Engineering"]
