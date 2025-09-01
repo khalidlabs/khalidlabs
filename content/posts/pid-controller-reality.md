@@ -6,7 +6,6 @@ description: "Amidst the grand promises of Artificial General Intelligence, it i
 tags: ["Reflections", "AI", "Engineering"]
 categories: ["Reflections"]
 ---
----
 
 ### **The PID Controller Reality Check for AGI**
 

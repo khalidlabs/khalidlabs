@@ -37,7 +37,3 @@ Done! Post will be live at `https://khalidlabs.github.io` in 2-5 minutes.
 
 
 git add . && git commit -m "Update" && git push
-
-
-
-
