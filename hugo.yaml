@@ -6,7 +6,7 @@ theme: ["PaperMod"]
 
 params:
   homeInfoParams:
-    Title: "KhalidLabs
+    Title: "KhalidLabs"
     Content: |
       Welcome to my blog! I write about technology, engineering, and more.
       
