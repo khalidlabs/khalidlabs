@@ -3,7 +3,7 @@ title: "Data to Action: From Industrial Data to Optimization Insight"
 slug: "data-to-action"
 description: "Running complex chemical manufacturing plants efficiently and safely is crucial, especially with growing concerns about sustainability and resource use. The goal is always to make the right amount of product, of the right quality, at the lowest cost, while staying safe and minimizing environmental impact."
 category: "Research"
-featured: true
+featured: false
 imageUrl: "https://images.unsplash.com/photo-1581093804475-577d72e13ff4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
 technologies: ["Machine Learning", "Optimization", "Process Control"]
 ---
