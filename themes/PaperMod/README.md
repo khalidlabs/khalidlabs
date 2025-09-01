@@ -104,3 +104,61 @@ Release ChangeLog has info about stuff added: **[Releases](https://github.com/ad
 ## Stargazers over time 📈
 
 [![Stargazers over time](https://starchart.cc/adityatelange/hugo-PaperMod.svg?background=%23ffffff00&axis=%23858585&line=%236b63ff)](https://starchart.cc/adityatelange/hugo-PaperMod)
+
+## How to Switch PaperMod Modes
+
+The PaperMod theme has **3 modes** that you can configure in your `hugo.yaml` file:
+
+### 1. **Regular Mode** (Default)
+This is what you currently have - a standard blog layout with post listings.
+
+### 2. **Profile Mode** 
+Creates a personal profile page instead of a blog listing on the homepage.
+
+To enable Profile Mode, add this to your `hugo.yaml`:
+
+```yaml
+baseURL: https://khalidlabs.github.io/
+languageCode: en-us
+title: KhalidLabs
+theme: ["PaperMod"]
+
+params:
+  profileMode:
+    enabled: true
+    title: "Khalid Labs"
+    subtitle: "Your subtitle here"
+    imageUrl: "path/to/your/profile-image.jpg"  # Optional
+    imageTitle: "Profile Image"  # Optional
+    buttons:
+      - name: "Posts"
+        url: "posts/"
+      - name: "About"
+        url: "about/"
+```
+
+### 3. **Home-Info Mode**
+Shows an info section on the homepage along with posts.
+
+To enable Home-Info Mode, add this to your `hugo.yaml`:
+
+```yaml
+params:
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: |
+      Welcome to my blog! I write about technology, engineering, and more.
+      
+      Check out my latest posts below.
+```
+
+## Current Status
+Your site is currently in **Regular Mode** (the default). The mode switching is controlled by the `params` section in your `hugo.yaml` configuration file.
+
+## To Switch Modes:
+1. Edit your `hugo.yaml` file
+2. Add the appropriate `params` configuration for the mode you want
+3. Run `hugo server` to preview the changes
+4. Commit and push to deploy
+
+Would you like me to help you configure a specific mode?
