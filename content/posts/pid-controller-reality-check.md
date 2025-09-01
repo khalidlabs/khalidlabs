@@ -2,14 +2,11 @@
 title: "The PID Controller Reality Check for AGI"
 date: 2025-09-01T00:00:00Z
 draft: false
-description: "Amidst the grand promises of Artificial General Intelligence, it is easy to overlook the agents that already run our world. They are not vast, inscrutable neural networks, but humble, time-tested workhorses."
+description: 
 tags: ["Reflections", "AI", "Engineering", "Control Systems"]
 categories: ["Reflections"]
 ---
 
-### **The PID Controller Reality Check for AGI**
-
-**Introduction: The Simplest Honest Agent**
 
 Amidst the grand promises of Artificial General Intelligence, it is easy to overlook the agents that already run our world. They are not vast, inscrutable neural networks, but humble, time-tested workhorses. To understand the true challenge of creating a trustworthy autonomous system, we don't need to speculate about the future; we only need to examine the most successful and widely deployed agent in history: the Proportional-Integral-Derivative (PID) controller.
 
