@@ -2,3 +2,4 @@ baseURL: https://khalidlabs.github.io/
 languageCode: en-us
 title: KhalidLabs
 theme: ["PaperMod"]
+# Force rebuild - updated post front matter
