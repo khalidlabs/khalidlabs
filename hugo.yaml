@@ -16,18 +16,10 @@ params:
         url: "posts/"
       - name: "About"
         url: "about/"
-      - name: "LinkedIn"
-        url: "https://linkedin.com/in/khalidalhazmi/"
-      - name: "Email"
-        url: "mailto:your.email@example.com"
   
   # Social icons will also appear
   socialIcons:
-    - name: github
-      url: "https://github.com/yourusername"
     - name: linkedin
-      url: "https://linkedin.com/in/yourusername"
-    - name: twitter
-      url: "https://twitter.com/yourusername"
+      url: "https://linkedin.com/in/khalidalhazmi/"
     - name: email
       url: "mailto:your.email@example.com"
