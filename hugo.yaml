@@ -3,4 +3,6 @@ languageCode: en-us
 title: KhalidLabs
 theme: ["PaperMod"]
 disableSpecial1stPost: true
+homeInfoParams:
+  Title: "Welcome to KhalidLabs"
 # Force rebuild - updated post front matter
