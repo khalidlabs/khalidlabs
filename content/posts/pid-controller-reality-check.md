@@ -18,15 +18,13 @@ While we do not commonly think of “controllers,” such as PIDs, as agents, th
 > An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.  
 
 Under this definition, and under any reasonable conception of what an agent is, I think it is difficult to argue otherwise.  
+ 
 
+A PID loop is deceptively simple: it calculates an action from three ingredients—error in the present, error accumulated from the past, and a prediction of error to come. That is the entirety of its “intelligence.” Yet once this rule is placed in a real environment, new considerations immediately arise. The neat formula must be connected to sensors that are noisy and imperfect, to actuators with limits and delays, and to processes that rarely match their textbook models exactly.
 
-## The PID Controller as the Smallest Honest Agent  
+This is why the PID is such a useful case study. It illustrates the difference between a clean concept and that same concept situated in the world. On paper, the controller is compact and transparent; in practice, making it reliable requires layers of design that account for the contingencies of measurement, actuation, and interaction.
 
-A PID loop is deceptively simple: it calculates an action from three ingredients—error in the present, error accumulated from the past, and a prediction of error to come. That is the entirety of its “intelligence.” Yet the moment we try to use this agent in the physical world, the simplicity evaporates. What emerges is not an abstract formula but an engineered system, one that must wrestle with ambiguity, noise, limits, and safety.  
-
-This is why the PID is such a useful case study. It shows, in miniature, the distinction between *algorithm* and *agent*. The formula may fit on a single line, but turning it into a trustworthy operator demands a whole architecture around it.  
-
-So, my question is, if such a simple and transparent recipe of action becomes more challenging in practice, what can that tell us about agents that we don’t understand?  
+So, my question is, if such a simple and transparent recipe of action becomes more challenging in practice, what can that tell us about agents that we don’t understand?
 
 It should give us pause. A PID controller is not mysterious. Every term can be written on a napkin, every parameter has a physical interpretation, and yet its reliable use demands a careful architecture of safeguards, conventions, and coordination. If this is what it takes for the most elementary agent we know, then the promise of deploying far more complex and opaque agents—ones whose inner workings we cannot summarize on a single line—cannot be taken at face value.  
 
