@@ -9,7 +9,7 @@ categories: ["Reflections"]
 
 
 
-In the post, I would like to think about agents that already run our world. They are not the fancy agents that have come to dominate the technology discourse. They are time-tested workhorses. To understand the true challenge of creating a trustworthy autonomous system, I propose to think about the most successful and widely deployed agent in history: the Proportional-Integral-Derivative (PID) controller.  
+In this post, I would like to think about agents that already run our world. They are not the fancy agents that have come to dominate the technology discourse. They are time-tested workhorses. To understand the true challenge of creating a trustworthy autonomous system, I propose to think about the most successful and widely deployed agent in history: the Proportional-Integral-Derivative (PID) controller.  
 
 I choose the PID controller precisely because it is simple, real, and tested time again in the real world. It is a decision-making policy in its purest form. While the control algorithm itself is well-studied, the enormous amount of engineering required to make it operate reliably highlights the critical gap between an abstract algorithm and a functioning agent. Analyzing these necessary steps provides a crucial reality check for any credible claim about autonomy.  
 
