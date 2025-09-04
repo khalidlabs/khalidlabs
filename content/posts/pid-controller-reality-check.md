@@ -17,15 +17,18 @@ While we do not commonly think of “controllers,” such as PIDs, as agents, th
 
 Under this definition, and under any reasonable conception of what an agent is, I think it is difficult to argue otherwise.  
 
---- 
+
+### The PID Controller as an Embedded Concept  
 
 A PID loop is deceptively simple: it calculates an action from three ingredients: error in the present, error accumulated from the past, and a prediction of error to come. That is the entirety of its “intelligence.” But once this rule is placed in a real environment, the picture changes. The formula must be tied to sensors that drift, actuators with limits, and processes that behave differently than their models.  
 
+Consider the seemingly ordinary task of controlling the level in a water tank. On paper, the rule is trivial: if the level is too low, open the valve; if it is too high, close it. In practice, the controller must account for noisy measurements, delays in valve response, nonlinear flow, and interaction with other loops in the plant.  
+
 This is why the PID is such a useful case study. It shows how a compact idea acquires complexity when embedded in the world. On paper it is almost trivial; in practice, making it reliable requires careful attention to measurement, actuation, and coordination.  
 
-So, my question is, if such a straightforward recipe for action becomes difficult in practice, what should we expect from agents whose workings we do not even fully understand?  
+So, my question is, if such a straightforward recipe for action becomes difficult in practice, what should we expect from agents whose workings we do not even fully understand? 
 
----
+### Where the Work Really Lies  
 
 The PID equation says little about what it takes to make a controller trustworthy. That work happens in the surrounding design:  
 
@@ -37,17 +40,19 @@ The PID equation says little about what it takes to make a controller trustworth
 
 None of this complexity is visible in the compact formula, yet it is what turns the concept into a functioning agent.  
 
----
+
+### Lessons for Autonomy  
 
 The analogy to today’s discourse on autonomy is direct. Replace the water tank with a vehicle, or the valve with a supply chain decision, and the same truth holds: the abstract policy is never enough. Real agents must contend with measurement, actuation, limits, coordination, and human oversight.  
 
 The PID loop reminds us that autonomy is not just about clever decision rules. It is about embedding those rules into a structured environment where safety, stability, and operability can be guaranteed. Without this surrounding architecture, an algorithm remains an idea—not an agent.  
 
----
 
+### So?
 
 A PID loop is the smallest honest agent we trust with physical processes. It earns that trust not because its logic is sophisticated but because engineers have built the structures that make it reliable: calibration of inputs, constraints on outputs, safeguards against instability, and mechanisms for human interaction.  
 
-If even this elementary agent requires such care, then any claim of “autonomous” intelligence must be judged against the same standard. An agent that cannot yet control a tank of water has no business declaring itself fit to govern the world.  
+If even this elementary agent requires such care, then any claim of “autonomous” intelligence must be judged against the same standard. An agent that cannot yet control a water tank has no business declaring itself fit to govern the world.  
+
 
 
