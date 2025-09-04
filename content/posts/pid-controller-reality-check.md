@@ -8,13 +8,17 @@ categories: ["Reflections"]
 ---
 
 
-Amidst the grand promises of Artificial General Intelligence, it is easy to overlook the agents that already run our world. They are not vast, inscrutable neural networks, but humble, time-tested workhorses. To understand the true challenge of creating a trustworthy autonomous system, we don't need to speculate about the future; we only need to examine the most successful and widely deployed agent in history: the Proportional-Integral-Derivative (PID) controller.
+In the post, I would like to think about agents that already run our world. They are not the fancy agents that have come to dominate the technology discourse. They are time-tested workhorses. To understand the true challenge of creating a trustworthy autonomous system, I propose to think about the most successful and widely deployed agent in history: the Proportional-Integral-Derivative (PID) controller.
 
-We choose the PID controller precisely because it is simple, real, and tested by decades of unforgiving, real-world operation. It is a decision-making policy in its purest form. While the control algorithm itself is well-studied, the enormous amount of engineering required to make it operate reliably highlights the critical gap between an abstract algorithm and a functioning, trustworthy agent. Analyzing these necessary steps provides a crucial reality check for any credible claim about autonomy
+I choose the PID controller precisely because it is simple, real, and tested time again in the real world. It is a decision-making policy in its purest form. While the control algorithm itself is well-studied, the enormous amount of engineering required to make it operate reliably highlights the critical gap between an abstract algorithm and a functioning agent. Analyzing these necessary steps provides a crucial reality check for any credible claim about autonomy.
 
-Discussions about "autonomous agents" or "Artificial General Intelligence" (AGI) are fundamentally about creating policies that can perceive the world and act effectively within it. Before we can trust an AGI to manage a company or drive a vehicle, it's worth examining the simplest and most common autonomous agent we already trust with critical tasks: the Proportional-Integral-Derivative (PID) controller.
+While we do not commonly think of "controllers" ,such as PIDs as agents, they do fit the definition of an agent squarely. As the authors of Artificial Intelligence: A Modern Approach write:
 
-A PID loop is a decision-making policy in its purest form. Though its core logic is simple, making this well-studied agent work reliably in the real world requires an **enormous amount of engineering**. This effort exposes the vast and unforgiving gap between abstract algorithms and physical operation. Analyzing this simple controller provides a crucial reality check, clarifying the fundamental requirements that any credible autonomous system—no matter how complex—must fulfill.
+> An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.
+
+Under this definition, and under any reasonable conception of what an agent is, I think it is difficult to argue otherwise.
+
+A PID loop is a decision-making policy in its purest form. Though its core logic is simple, making this well-studied agent work reliably in the real world requires an **enormous amount of engineering**. This effort exposes the vast gap between abstract algorithms and physical operation. Analyzing this simple controller provides a crucial reality check, clarifying the fundamental requirements that any credible autonomous system—no matter how complex—must fulfill.
 
 **The PID Controller's Deceptively Simple Logic**
 
