@@ -44,16 +44,15 @@ None of this complexity is visible in the compact formula, yet it is what turns 
 
 ### Lessons for Autonomy  
 
-LLM “agents” do not act in the physical world. They output text or trigger software calls. Without instruments, actuators, and the architecture that binds decisions to consequences, these outputs remain proposals, not actions. When such outputs are coupled to physical systems, the problem changes class: measurements carry error and drift, actuators have limits and delays, interactions create feedback and risk. For this reason, an LLM agent is not a satisfactory recipe for autonomy. Autonomy is a property of an embedded system, not of a standalone policy.
+These days, agents almost always come up in the context of "LLM agents". But these agents do not act in the physical world. They output text or trigger software calls. In the physoical world, without instruments, actuators, and the architecture that binds decisions to consequences, these outputs remain proposals, not actions. When such outputs are coupled to physical systems, the problem changes class: measurements carry error and drift, actuators have limits and delays, interactions create feedback and risk. For this reason, an LLM agent is not a satisfactory recipe for autonomy. Autonomy is a property of an embedded system, not of a standalone policy.
 
 The hard part of autonomy is not inventing new rules of action, but designing the structures that let those rules operate safely and predictably in the world. Replace the water tank with a vehicle, or the valve with a supply chain decision, and the same truth holds: the abstract policy is never enough.  
 
 ### So?  
 
-A PID loop is the smallest honest agent we trust with physical processes. It earns that trust not because its logic is sophisticated but because engineers have built the structures that make it reliable: calibration of inputs, constraints on outputs, safeguards against instability, and mechanisms for human interaction.  
+A PID loop is a small honest agent we trust with physical processes. It earns that trust not because its logic is sophisticated but because engineers have built the structures that make it reliable: calibration of inputs, constraints on outputs, safeguards against instability, and mechanisms for human interaction.  
 
-If even this elementary agent requires such care, then any claim of “autonomous” intelligence must be judged against the same standard. An agent that cannot yet control a water tank has no business declaring itself fit to govern the world.  
-
+If even this elementary agent demands such care, then bold claims of imminent “autonomous” intelligence deserve rigorous scrutiny.
 
 
 
