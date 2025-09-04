@@ -44,7 +44,7 @@ None of this complexity is visible in the compact formula, yet it is what turns 
 
 ### Lessons for Autonomy  
 
-The temptation in AI is to equate autonomy with good decision logic. But the PID case shows that the real challenge begins after the decision is made. A policy that looks effective in the abstract does not automatically translate into a functioning agent once it is embedded in a system of noisy measurements, limited actuators, human operators, and interacting loops.  
+LLM “agents” do not act in the physical world. They output text or trigger software calls. Without instruments, actuators, and the architecture that binds decisions to consequences, these outputs remain proposals, not actions. When such outputs are coupled to physical systems, the problem changes class: measurements carry error and drift, actuators have limits and delays, interactions create feedback and risk. For this reason, an LLM agent is not a satisfactory recipe for autonomy. Autonomy is a property of an embedded system, not of a standalone policy.
 
 The hard part of autonomy is not inventing new rules of action, but designing the structures that let those rules operate safely and predictably in the world. Replace the water tank with a vehicle, or the valve with a supply chain decision, and the same truth holds: the abstract policy is never enough.  
 
