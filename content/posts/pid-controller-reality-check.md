@@ -7,8 +7,6 @@ tags: ["Reflections", "AI", "Engineering", "Control Systems"]
 categories: ["Reflections"]
 ---
 
-
-
 In this post, I would like to think about agents that already run our world. They are not the fancy agents that have come to dominate the technology discourse. They are time-tested workhorses. To understand the true challenge of creating a trustworthy autonomous system, I propose to think about the most successful and widely deployed agent in history: the Proportional-Integral-Derivative (PID) controller.  
 
 I choose the PID controller precisely because it is simple, real, and tested time again in the real world. It is a decision-making policy in its purest form. While the control algorithm itself is well-studied, the enormous amount of engineering required to make it operate reliably highlights the critical gap between an abstract algorithm and a functioning agent. Analyzing these necessary steps provides a crucial reality check for any credible claim about autonomy.  
@@ -18,26 +16,38 @@ While we do not commonly think of “controllers,” such as PIDs, as agents, th
 > An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.  
 
 Under this definition, and under any reasonable conception of what an agent is, I think it is difficult to argue otherwise.  
- 
 
-A PID loop is deceptively simple: it calculates an action from three ingredientsL: error in the present, error accumulated from the past, and a prediction of error to come. That is the entirety of its “intelligence.” Yet once this rule is placed in a real environment, new considerations immediately arise. The neat formula must be connected to sensors that are noisy and imperfect, to actuators with limits and delays, and to processes that rarely match their textbook models exactly.
+--- 
 
-This is why the PID is such a useful case study. It illustrates the difference between a clean concept and that same concept situated in the world. On paper, the controller is compact and transparent; in practice, making it reliable requires layers of design that account for the contingencies of measurement, actuation, and interaction.
+A PID loop is deceptively simple: it calculates an action from three ingredients: error in the present, error accumulated from the past, and a prediction of error to come. That is the entirety of its “intelligence.” But once this rule is placed in a real environment, the picture changes. The formula must be tied to sensors that drift, actuators with limits, and processes that behave differently than their models.  
 
-So, my question is, if such a simple and transparent recipe of action becomes more challenging in practice, what can that tell us about agents that we don’t understand?
+This is why the PID is such a useful case study. It shows how a compact idea acquires complexity when embedded in the world. On paper it is almost trivial; in practice, making it reliable requires careful attention to measurement, actuation, and coordination.  
 
-It should give us pause. A PID controller is not mysterious. Every term can be written on a napkin, every parameter has a physical interpretation, and yet its reliable use demands a careful architecture of safeguards, conventions, and coordination. If this is what it takes for the most elementary agent we know, then the promise of deploying far more complex and opaque agents—ones whose inner workings we cannot summarize on a single line—cannot be taken at face value.  
+So, my question is, if such a straightforward recipe for action becomes difficult in practice, what should we expect from agents whose workings we do not even fully understand?  
 
-The lesson is not that autonomy is impossible, but that autonomy is never just the policy. An agent’s intelligence is inseparable from the scaffolding that makes it robust: the way its inputs are measured, the way its outputs are constrained, the way it interacts with other agents and with human operators. With PID controllers, engineers learned this lesson through decades of trial, error, and sometimes costly failures.  
+---
 
-The challenge before us now is to recognize that advanced agents will need their own versions of this scaffolding—principles of tuning, limits, handover, and coordination adapted to their domains. Without this surrounding structure, they remain what the bare PID equation would be on its own: a clever idea, not a trustworthy operator.  
+The PID equation says little about what it takes to make a controller trustworthy. That work happens in the surrounding design:  
 
-The analogy to today’s discourse on autonomy is direct. Replace the water tank with a vehicle, or the valve with a supply chain decision, and the same truth holds: the algorithm is never the agent. The reality of sensors, actuators, dynamics, limits, coordination, and human operability cannot be waved away.  
+- **Mapping to the physical world.** “Error” must be defined through sensors that are noisy, biased, or drifting. “Action” must be expressed through actuators that have hard limits, delays, and wear.  
+- **Tuning to dynamics.** Gains that work in one process can destabilize another. Responsiveness and stability must be balanced against the specific physics of the system.  
+- **Handling limits.** Without safeguards, a controller will command impossible actions. Anti-windup measures prevent internal states from drifting away from what is physically achievable.  
+- **Managing modes and handovers.** Operators must be able to intervene, and control must pass back smoothly. This requires protocols like bumpless transfer, which keep internal states aligned with the plant.  
+- **Interacting with peers.** Controllers rarely operate in isolation; their actions create disturbances for others. Stability emerges at the system level, not from any single loop.  
 
-When AI researchers present a new policy or model as an “agent,” the PID loop offers a sobering reminder. Unless the messy work of grounding, tuning, limiting, and coordinating is addressed, we are looking at an equation, not an operator. A credible agent is not defined by clever decision logic alone but by the full system of engineering that makes those decisions safe, stable, and usable.  
+None of this complexity is visible in the compact formula, yet it is what turns the concept into a functioning agent.  
 
-A PID loop is the smallest honest agent we trust with physical processes. It earns that trust not because its logic is sophisticated but because decades of engineering have wrapped it in mechanisms that account for measurement, actuation, timing, limits, safety, and handover. If even this tiny agent requires such care, then any claim of “autonomous” intelligence must be judged against the same standard.  
+---
 
-An agent that cannot yet control a tank of water has no business declaring itself fit to govern the world.  
+The analogy to today’s discourse on autonomy is direct. Replace the water tank with a vehicle, or the valve with a supply chain decision, and the same truth holds: the abstract policy is never enough. Real agents must contend with measurement, actuation, limits, coordination, and human oversight.  
+
+The PID loop reminds us that autonomy is not just about clever decision rules. It is about embedding those rules into a structured environment where safety, stability, and operability can be guaranteed. Without this surrounding architecture, an algorithm remains an idea—not an agent.  
+
+---
+
+
+A PID loop is the smallest honest agent we trust with physical processes. It earns that trust not because its logic is sophisticated but because engineers have built the structures that make it reliable: calibration of inputs, constraints on outputs, safeguards against instability, and mechanisms for human interaction.  
+
+If even this elementary agent requires such care, then any claim of “autonomous” intelligence must be judged against the same standard. An agent that cannot yet control a tank of water has no business declaring itself fit to govern the world.  
 
 
