@@ -25,47 +25,28 @@ Much of today’s AI discourse assumes that the hard problem of autonomy is solv
 
 To get a taste of how a simple recipe can become less so in practice, consider the existance of different forms of PID. there are several equation forms (algorithms) that are employed depending on the application, implementation (analog, digital, or PLC/DCS), and tuning conventions.
 
+- Standard (Ideal)
+u(t) = Kp*e(t) + Ki*∫_0^t e(τ) dτ + Kd*d(e)/dt
+
+- Parallel (Non-interacting)
+u(t) = Kp*e(t) + (Kp/Ti)*∫_0^t e(τ) dτ + (Kp*Td)*d(e)/dt
+
+- Series (Interacting)  [Laplace]
+U(s) = Kc * (1 + 1/(Ti*s)) * (1 + Td*s) * E(s)
+
+- Position (discrete)
+u[k] = Kp*e[k] + Ki*Σ_{j=0..k} e[j]*Δt + Kd*(e[k]-e[k-1])/Δt
+
+- Velocity/Incremental (discrete)
+Δu[k] = Kp*(e[k]-e[k-1]) + Ki*e[k]*Δt + Kd*(e[k]-2e[k-1]+e[k-2])/Δt)
+
+- ISA form
+u(t) = Kc * [ e(t) + (1/Ti)*∫ e(t) dt + Td*de(t)/dt ]
+
+- Filtered-derivative
+u(t) = Kp*e(t) + (Kp/Ti)*∫ e(t) dt + (Kp*Td)/(α*Td*s + 1) * de(t)/dt
 
 
-## 1. Standard (Ideal)
-\[
-u(t)=K_p\,e(t)+K_i\!\int_0^t\! e(\tau)\,d\tau+K_d\,\frac{de(t)}{dt}
-\]
-
-## 2. Parallel (Non-interacting)
-\[
-u(t)=K_p e(t)+\frac{K_p}{T_i}\!\int_0^t\! e(\tau)\,d\tau+K_p T_d\,\frac{de(t)}{dt}
-\]
-
-## 3. Series (Interacting) (Laplace)
-\[
-U(s)=K_c\!\left(1+\frac{1}{T_i s}\right)\!\left(1+T_d s\right)\!E(s)
-\]
-
-## 4. Position (discrete)
-\[
-u[k]=K_p e[k]+K_i\sum_{j=0}^{k} e[j]\Delta t+K_d\,\frac{e[k]-e[k-1]}{\Delta t}
-\]
-
-## 5. Velocity / Incremental (discrete)
-\[
-\Delta u[k]=K_p(e[k]-e[k-1])+K_i e[k]\Delta t+K_d\,\frac{e[k]-2e[k-1]+e[k-2]}{\Delta t}
-\]
-
-## 6. PI
-\[
-u(t)=K_p e(t)+\frac{K_p}{T_i}\!\int_0^t\! e(\tau)\,d\tau
-\]
-
-## 7. ISA
-\[
-u(t)=K_c\!\left[e(t)+\frac{1}{T_i}\!\int e(t)\,dt+T_d\,\frac{de(t)}{dt}\right]
-\]
-
-## 8. Filtered derivative
-\[
-u(t)=K_p e(t)+\frac{K_p}{T_i}\!\int e(t)\,dt+\frac{K_p T_d}{\alpha T_d s+1}\,\frac{de(t)}{dt}
-\]
 
 
 A PID loop calculates an action from three ingredients: error in the present, error accumulated from the past, and a prediction of error to come. That is the entirety of its “intelligence.” But once this rule is placed in a real environment, the picture changes. The formula must be tied to sensors that drift, actuators with limits, and processes that behave differently than their models.  
