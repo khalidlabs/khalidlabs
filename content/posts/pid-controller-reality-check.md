@@ -59,13 +59,13 @@ So, my question is, if such a straightforward recipe for action becomes difficul
 
 ### Where the Work Really Lies  
 
-The PID equation says little about what it takes to make a controller trustworthy. That work happens in the surrounding design:  
+The PID equation says little about what it takes to make a controller reliable. That work happens in the surrounding design:  
 
 - **Mapping to the physical world.** “Error” must be defined through sensors that are noisy, biased, or drifting. “Action” must be expressed through actuators that have hard limits, delays, and wear.  
 - **Tuning to dynamics.** Gains that work in one process can destabilize another. Responsiveness and stability must be balanced against the specific physics of the system.  
 - **Handling limits.** Without safeguards, a controller will command impossible actions. Anti-windup measures prevent internal states from drifting away from what is physically achievable.  
 - **Managing modes and handovers.** Operators must be able to intervene, and control must pass back smoothly. This requires protocols like bumpless transfer, which keep internal states aligned with the plant.  
-- **Interacting with peers.** Controllers rarely operate in isolation; their actions create disturbances for others. Stability emerges at the system level, not from any single loop.  
+- **Interacting with other PIDs.** Controllers rarely operate in isolation; their actions create disturbances for others. Stability emerges at the system level, not from any single loop.  
 
 None of this complexity is visible in the compact formula, yet it is what turns the concept into a functioning agent.  
 
