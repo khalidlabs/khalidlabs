@@ -23,7 +23,7 @@ Under this definition, and under any reasonable conception of what an agent is, 
 
 Much of today’s AI discourse assumes that the hard problem of autonomy is solved once we can specify a policy that makes the “right” decisions. The PID loop shows otherwise. Here is a policy so transparent it can be written on a single line, and still, its usefulness depends almost entirely on the engineering that surrounds it. The insight is not about how to decide, but about how that decision logic behaves once it is coupled to sensors, actuators, and other agents in the world.  
 
-To get a taste of how a simple recipe can become less so in practice, consider the existance of different forms of PID. there are several equation forms (algorithms) that are employed depending on the application, implementation (analog, digital, or PLC/DCS), and tuning conventions.
+To get a taste of how a simple recipe can become less so in practice, consider the existance of different forms of PID. There are several equation forms (algorithms) that are employed depending on the application, implementation (analog, digital, or PLC/DCS), and tuning conventions:
 
 - Standard (Ideal)
 u(t) = Kp*e(t) + Ki*∫_0^t e(τ) dτ + Kd*d(e)/dt
