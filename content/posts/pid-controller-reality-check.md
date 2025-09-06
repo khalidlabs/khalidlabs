@@ -24,28 +24,28 @@ Much of today’s AI discourse assumes that the hard problem of autonomy is solv
 
 To get a taste of how a simple recipe can become less so in practice, consider the existance of different forms of PID. there are several equation forms (algorithms) that are employed depending on the application, implementation (analog, digital, or PLC/DCS), and tuning conventions.
 
-1) Standard (Ideal)
+Standard (Ideal)
 u(t) = Kp*e(t) + Ki*∫_0^t e(τ) dτ + Kd*d(e)/dt
 
-2) Parallel (Non-interacting)
+Parallel (Non-interacting)
 u(t) = Kp*e(t) + (Kp/Ti)*∫_0^t e(τ) dτ + (Kp*Td)*d(e)/dt
 
-3) Series (Interacting)  [Laplace]
+Series (Interacting)  [Laplace]
 U(s) = Kc * (1 + 1/(Ti*s)) * (1 + Td*s) * E(s)
 
-4) Position (discrete)
+Position (discrete)
 u[k] = Kp*e[k] + Ki*Σ_{j=0..k} e[j]*Δt + Kd*(e[k]-e[k-1])/Δt
 
-5) Velocity/Incremental (discrete)
+Velocity/Incremental (discrete)
 Δu[k] = Kp*(e[k]-e[k-1]) + Ki*e[k]*Δt + Kd*(e[k]-2e[k-1]+e[k-2])/Δt
 
-6) PI variant
+PI variant
 u(t) = Kp*e(t) + (Kp/Ti)*∫_0^t e(τ) dτ
 
-7) ISA form
+ISA form
 u(t) = Kc * [ e(t) + (1/Ti)*∫ e(t) dt + Td*de(t)/dt ]
 
-8) Filtered-derivative
+Filtered-derivative
 u(t) = Kp*e(t) + (Kp/Ti)*∫ e(t) dt + (Kp*Td)/(α*Td*s + 1) * de(t)/dt
 
 
